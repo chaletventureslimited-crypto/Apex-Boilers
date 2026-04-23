@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apex Boiler Hire | Temporary Commercial & Industrial Boiler Hire UK</title>
+<meta name="description" content="Apex Boiler Hire provides temporary boiler hire solutions across the UK for commercial and industrial clients. Emergency and planned hire for schools, hospitals, factories and more.">
+<link rel="icon" type="image/png" href="Assets/Images/Apex Boilers - Favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+  :root {
+    --primary-color: #f26a33;
+    --secondary-color: #1c9dd8;
+    --navy: #0d1f35;
+    --navy-light: #1a3352;
+    --blue: #1c9dd8;
+    --blue-mid: #2aade8;
+    --blue-light: #e3f8fd;
+    --orange: #f26a33;
+    --orange-bright: #ff7d47;
+    --white: #ffffff;
+    --off-white: #f7f8fa;
+    --grey-light: #eef0f4;
+    --grey-mid: #8a9ab0;
+    --grey-dark: #3d4f62;
+    --text: #1a2535;
+    --text-light: #5a6b80;
+    --border: #d8e0ea;
+    --shadow: 0 4px 24px rgba(13,31,53,0.10);
+    --shadow-lg: 0 12px 48px rgba(13,31,53,0.16);
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; font-size: 16px; }
+  body { font-family: 'Barlow', sans-serif; color: var(--text); background: var(--white); line-height: 1.65; -webkit-font-smoothing: antialiased; }
+
+  /* ─── MOTION ─── */
+  @keyframes fadeSlideUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+  .fade-in, .fade-up { opacity: 0; transform: translateY(18px); transition: opacity 0.55s ease, transform 0.55s ease; }
+  .fade-in { transform: translateY(0); }
+  .fade-in.is-visible, .fade-up.is-visible { opacity: 1; transform: translateY(0); }
+  .hover-lift { transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.2s ease, border-color 0.2s ease, color 0.2s ease; }
+  .hover-lift:hover { transform: translateY(-2px); }
+  .icon-hover .icon, .service-icon .icon, .why-icon .icon, .industry-chip .icon, .trust-badge .icon { transition: transform 0.25s ease, color 0.25s ease; }
+  .icon-hover:hover .icon, .service-card:hover .service-icon .icon, .why-card:hover .why-icon .icon, .industry-chip:hover .icon, .trust-badge:hover .icon { transform: translateY(-1px); }
+  
+  /* ─── HEADER ─── */
+  #site-header {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    background: var(--navy); border-bottom: 3px solid var(--orange);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 2rem; height: 68px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.25);
+  }
+  .header-logo { display: flex; align-items: center; justify-content: center; cursor: pointer; text-decoration: none; }
+  .logo-image { height: auto; width: auto; max-height: 56px; display: block; object-fit: contain; }
+  .logo-text { font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 1.55rem; color: var(--white); letter-spacing: 0.04em; line-height: 1; }
+  .logo-text span { color: var(--orange-bright); }
+  .logo-sub { font-family: 'Barlow Condensed', sans-serif; font-weight: 400; font-size: 0.7rem; color: var(--grey-mid); letter-spacing: 0.14em; text-transform: uppercase; }
+  .header-nav { display: flex; align-items: center; gap: 0.25rem; }
+  .header-nav a {
+    font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 0.95rem;
+    color: rgba(255,255,255,0.82); text-decoration: none; padding: 0.45rem 0.75rem;
+    border-radius: 4px; transition: color 0.2s, background 0.2s; letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .header-nav a:hover, .header-nav a.active { color: var(--white); background: rgba(255,255,255,0.1); }
+  .header-actions { display: flex; align-items: center; gap: 0.75rem; }
+  .header-phone { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.05rem; color: var(--white); text-decoration: none; display: flex; align-items: center; gap: 0.4rem; }
+  .icon { margin-right: 8px; font-size: 16px; line-height: 1; vertical-align: middle; flex-shrink: 0; }
+  .icon:last-child { margin-right: 0; }
+  .icon-lg { font-size: 40px; margin-right: 0; }
+  .header-phone .icon, .btn-primary .icon, .btn-outline .icon, .btn-white .icon, .emergency-phone .icon, .hero-trust-item .icon, .trust-badge .icon, .industry-chip .icon, .sidebar-list .icon { margin-right: 0; }
+  .btn-header-quote {
+    background: var(--orange); color: var(--white); border: none; cursor: pointer;
+    font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.9rem;
+    letter-spacing: 0.06em; text-transform: uppercase; padding: 0.5rem 1.1rem;
+    border-radius: 4px; text-decoration: none; transition: background 0.2s, transform 0.25s ease;
+  }
+  .btn-header-quote:hover { background: var(--orange-bright); transform: translateY(-2px); }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+  .hamburger span { width: 24px; height: 2px; background: var(--white); display: block; transition: all 0.3s; }
+  
+  /* ─── PAGES ─── */
+  .page { display: none; padding-top: 68px; }
+  .page.active { display: block; }
+
+  /* ─── HERO ─── */
+  .hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 55%, var(--blue-mid) 100%);
+    min-height: 88vh; display: flex; align-items: center; position: relative; overflow: hidden;
+    padding: 4rem 2rem 3rem;
+  }
+  .hero::before {
+    content: ''; position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.025'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .hero-banner-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.08; z-index: 0; pointer-events: none; }
+  .hero-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 420px; gap: 3rem; align-items: center; width: 100%; position: relative; z-index: 1; }
+  .hero-content { animation: fadeSlideUp 0.7s ease 0.08s both; }
+  .hero-form-card { animation: fadeSlideUp 0.7s ease 0.2s both; }
+  .hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(242,106,51,0.15); border: 1px solid rgba(242,106,51,0.4); color: var(--orange-bright); font-family: 'Barlow Condensed', sans-serif; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.3rem 0.75rem; border-radius: 20px; margin-bottom: 1.25rem; }
+  .hero-badge::before { content: '●'; font-size: 0.6rem; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+  .hero h1 { font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: clamp(2.4rem, 5vw, 3.8rem); color: var(--white); line-height: 1.05; margin-bottom: 1rem; letter-spacing: -0.01em; }
+  .hero h1 em { font-style: normal; color: var(--orange-bright); }
+  .hero-sub { font-size: 1.15rem; color: rgba(255,255,255,0.75); max-width: 520px; margin-bottom: 2rem; line-height: 1.7; }
+  .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+  .btn-primary { background: var(--orange); color: var(--white); border: none; cursor: pointer; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.85rem 2rem; border-radius: 4px; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.25s ease; }
+  .btn-primary:hover { background: var(--orange-bright); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(242,106,51,0.4); }
+  .btn-outline { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.45); cursor: pointer; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.8rem 1.8rem; border-radius: 4px; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.25s ease; }
+  .btn-outline:hover { background: rgba(255,255,255,0.1); border-color: var(--white); transform: translateY(-2px); }
+  .hero-trust { display: flex; gap: 2rem; flex-wrap: wrap; }
+  .hero-trust-item { display: flex; align-items: center; gap: 0.5rem; color: rgba(255,255,255,0.65); font-size: 0.85rem; font-weight: 500; }
+  .hero-trust-item .icon { color: var(--orange-bright); }
+  
+  /* Quote form in hero */
+  .hero-form-card { background: var(--white); border-radius: 8px; padding: 1.75rem; box-shadow: var(--shadow-lg); }
+  .hero-form-card h3 { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1.2rem; color: var(--navy); margin-bottom: 0.25rem; text-transform: uppercase; letter-spacing: 0.04em; }
+  .hero-form-card p { font-size: 0.85rem; color: var(--text-light); margin-bottom: 1.25rem; }
+  .form-group { margin-bottom: 0.9rem; }
+  .form-group label { display: block; font-size: 0.8rem; font-weight: 600; color: var(--grey-dark); margin-bottom: 0.3rem; text-transform: uppercase; letter-spacing: 0.06em; }
+  .form-group input, .form-group select, .form-group textarea {
+    width: 100%; padding: 0.65rem 0.85rem; border: 1.5px solid var(--border);
+    border-radius: 4px; font-family: 'Barlow', sans-serif; font-size: 0.95rem; color: var(--text);
+    background: var(--white); transition: border-color 0.2s;
+    outline: none;
+  }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--blue); }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+  .btn-submit { width: 100%; background: var(--orange); color: var(--white); border: none; cursor: pointer; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.9rem; border-radius: 4px; transition: background 0.2s; margin-top: 0.25rem; }
+  .btn-submit:hover { background: var(--orange-bright); }
+
+  /* ─── SECTIONS COMMON ─── */
+  section { padding: 4.5rem 2rem; }
+  .page-section { padding: 0; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  .section-label { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--orange); margin-bottom: 0.6rem; display: block; }
+  .section-title { font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: clamp(1.8rem, 3.5vw, 2.6rem); color: var(--navy); line-height: 1.1; margin-bottom: 1rem; }
+  .section-title em { font-style: normal; color: var(--blue); }
+  .section-sub { font-size: 1.05rem; color: var(--text-light); max-width: 600px; line-height: 1.7; margin-bottom: 2.5rem; }
+  .text-center { text-align: center; }
+  .text-center .section-sub { margin-left: auto; margin-right: auto; }
+  
+  /* ─── INTRO STRIP ─── */
+  .intro-strip { background: var(--off-white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .intro-strip .container { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+  .intro-strip p { color: var(--text-light); line-height: 1.8; margin-bottom: 1rem; }
+  .intro-strip p:last-child { margin-bottom: 0; }
+  .intro-right { display: flex; flex-direction: column; justify-content: flex-start; gap: 20px; }
+  .delay-1 { transition-delay: 0.08s; animation-delay: 0.08s; }
+  .delay-2 { transition-delay: 0.16s; animation-delay: 0.16s; }
+  .delay-3 { transition-delay: 0.24s; animation-delay: 0.24s; }
+  .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: -20px; }
+  .stat-card { background: var(--navy); padding: 1.25rem 1.5rem; border-radius: 6px; border-left: 4px solid var(--orange); }
+  .stat-card .stat-num { font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 2.2rem; color: var(--white); line-height: 1; margin-bottom: 0.2rem; }
+  .stat-card .stat-label { font-size: 0.8rem; color: var(--grey-mid); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 500; }
+  .intro-visuals { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .intro-visuals img { width: 100%; height: auto; display: block; border-radius: 10px; object-fit: cover; box-shadow: 0 10px 24px rgba(0,0,0,0.12); border: 1.5px solid var(--border); background: var(--white); }
+
+  /* ─── SERVICE CARDS ─── */
+  .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+  .service-card { background: var(--white); border: 1.5px solid var(--border); border-radius: 8px; padding: 2rem 1.75rem; transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease; cursor: pointer; position: relative; overflow: hidden; }
+  .service-card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: var(--orange); transform: scaleX(0); transition: transform 0.25s; transform-origin: left; }
+  .service-card:hover { border-color: var(--blue); box-shadow: var(--shadow); transform: translateY(-3px); }
+  .service-card:hover::after { transform: scaleX(1); }
+  .service-icon { width: 52px; height: 52px; background: var(--blue-light); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem; color: var(--blue); }
+  .service-icon .icon { font-size: 22px; margin-right: 0; }
+  .service-card h3 { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1.15rem; color: var(--navy); margin-bottom: 0.6rem; text-transform: uppercase; letter-spacing: 0.03em; }
+  .service-card p { font-size: 0.9rem; color: var(--text-light); line-height: 1.7; }
+  .service-card .card-link { display: inline-flex; align-items: center; gap: 0.3rem; margin-top: 1rem; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.85rem; color: var(--blue); text-decoration: none; letter-spacing: 0.05em; text-transform: uppercase; }
+  .service-card .card-link:hover { color: var(--orange); }
+
+  /* ─── WHY CHOOSE ─── */
+  .why-section { background: var(--navy); }
+  .why-section .section-title { color: var(--white); }
+  .why-section .section-sub { color: rgba(255,255,255,0.65); }
+  .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 1rem; }
+  .why-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 1.75rem; transition: transform 0.25s ease, border-color 0.25s ease; }
+  .why-card:hover { transform: translateY(-2px); border-color: rgba(255,255,255,0.18); }
+  .why-card .why-icon { width: 48px; height: 48px; background: rgba(242,106,51,0.15); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--orange-bright); margin-bottom: 1rem; }
+  .why-icon .icon { font-size: 20px; margin-right: 0; }
+  .why-card h4 { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1.05rem; color: var(--white); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.04em; }
+  .why-card p { font-size: 0.88rem; color: rgba(255,255,255,0.58); line-height: 1.65; }
+
+  /* ─── INDUSTRIES ─── */
+  .industries-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+  .industry-chip { background: var(--off-white); border: 1.5px solid var(--border); border-radius: 6px; padding: 1.25rem; display: flex; align-items: center; gap: 0.75rem; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.95rem; color: var(--navy); text-transform: uppercase; letter-spacing: 0.04em; transition: all 0.2s; cursor: pointer; }
+  .industry-chip:hover { background: var(--blue-light); border-color: var(--blue); color: var(--blue); }
+  .industry-chip .icon { color: var(--orange); }
+
+  /* ─── HOW IT WORKS ─── */
+  .how-section { background: var(--off-white); }
+  .steps { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; position: relative; margin-top: 1rem; }
+  .steps::before { content: ''; position: absolute; top: 36px; left: 10%; right: 10%; height: 2px; background: linear-gradient(90deg, var(--orange) 0%, var(--blue) 100%); z-index: 0; }
+  .step { text-align: center; position: relative; z-index: 1; padding: 0 0.75rem; }
+  .step-num { width: 72px; height: 72px; background: var(--navy); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; color: var(--white); border: 3px solid var(--white); box-shadow: 0 0 0 3px var(--navy); }
+  .step-num span { font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 1.6rem; color: var(--orange-bright); }
+  .step h4 { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 0.95rem; color: var(--navy); margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.04em; }
+  .step p { font-size: 0.82rem; color: var(--text-light); line-height: 1.55; }
+
+  /* ─── EMERGENCY CTA STRIP ─── */
+  .emergency-strip { background: linear-gradient(90deg, var(--orange) 0%, #d4552f 100%); padding: 2.25rem 2rem; }
+  .emergency-strip .container { display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
+  .emergency-strip h3 { font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 1.6rem; color: var(--white); letter-spacing: 0.02em; }
+  .emergency-strip p { font-size: 0.95rem; color: rgba(255,255,255,0.85); margin-top: 0.2rem; }
+  .emergency-strip-actions { display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap; }
+  .btn-white { background: var(--white); color: var(--orange); border: none; cursor: pointer; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.8rem 1.75rem; border-radius: 4px; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.25s ease; }
+  .btn-white:hover { background: var(--off-white); transform: translateY(-2px); }
+  .emergency-phone { font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 1.5rem; color: var(--white); text-decoration: none; display: flex; align-items: center; gap: 0.5rem; }
+
+  /* ─── TESTIMONIALS ─── */
+  .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+  .testimonial-card { background: var(--white); border: 1.5px solid var(--border); border-radius: 8px; padding: 2rem; position: relative; }
+  .testimonial-card::before { content: '"'; font-family: 'Barlow Condensed', sans-serif; font-size: 5rem; color: var(--blue-light); line-height: 1; position: absolute; top: 0.75rem; left: 1.5rem; }
+  .testimonial-card p { font-size: 0.93rem; color: var(--text-light); line-height: 1.75; margin-top: 1.5rem; font-style: italic; }
+  .testimonial-author { margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
+  .testimonial-author strong { display: block; font-weight: 700; color: var(--navy); font-size: 0.9rem; }
+  .testimonial-author span { font-size: 0.8rem; color: var(--text-light); }
+  .stars { color: #FFA000; font-size: 1rem; margin-bottom: 0.25rem; }
+
+  /* ─── TRUST BADGES ─── */
+  .trust-strip { background: var(--grey-light); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 1.75rem 2rem; }
+  .trust-strip .container { display: flex; align-items: center; justify-content: center; gap: 3rem; flex-wrap: wrap; }
+  .trust-badge { display: flex; align-items: center; gap: 0.6rem; color: var(--grey-dark); font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.06em; text-transform: uppercase; }
+  .trust-badge .icon { color: var(--blue); }
+
+  /* ─── FINAL CTA ─── */
+  .final-cta { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%); padding: 4.5rem 2rem; }
+  .final-cta .section-title { color: var(--white); }
+  .final-cta .section-sub { color: rgba(255,255,255,0.65); }
+  .cta-form-card { background: var(--white); border-radius: 10px; padding: 2.5rem; max-width: 720px; margin: 0 auto; box-shadow: var(--shadow-lg); }
+  .cta-form-card h3 { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1.3rem; color: var(--navy); margin-bottom: 0.3rem; text-transform: uppercase; }
+  .cta-form-card > p { font-size: 0.9rem; color: var(--text-light); margin-bottom: 1.5rem; }
+  .three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.85rem; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem; }
+
+  /* ─── INNER PAGE HERO ─── */
+  .inner-hero { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%); padding: 3.5rem 2rem 3rem; }
+  .inner-hero .breadcrumb { font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.4rem; }
+  .inner-hero .breadcrumb a { color: rgba(255,255,255,0.6); text-decoration: none; cursor: pointer; }
+  .inner-hero .breadcrumb a:hover { color: var(--white); }
+  .inner-hero h1 { font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: clamp(2rem, 4vw, 3rem); color: var(--white); margin-bottom: 0.75rem; line-height: 1.1; }
+  .inner-hero h1 em { font-style: normal; color: var(--orange-bright); }
+  .inner-hero p { color: rgba(255,255,255,0.72); font-size: 1.05rem; max-width: 600px; line-height: 1.7; }
+  .inner-hero-grid { display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: center; max-width: 1200px; margin: 0 auto; }
+  .inner-hero-cta { display: flex; flex-direction: column; gap: 0.75rem; }
+
+  /* ─── CONTENT SECTIONS ─── */
+  .content-grid { display: grid; grid-template-columns: 1fr 360px; gap: 3rem; align-items: start; }
+  .content-body h2 { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1.5rem; color: var(--navy); margin-bottom: 0.75rem; margin-top: 2rem; text-transform: uppercase; }
+  .content-body h2:first-child { margin-top: 0; }
+  .content-body p { color: var(--text-light); line-height: 1.8; margin-bottom: 1rem; }
+  .content-body ul { margin: 0.5rem 0 1rem 0; padding-left: 0; list-style: none; }
+  .content-body ul li { padding: 0.35rem 0 0.35rem 1.5rem; position: relative; color: var(--text-light); font-size: 0.95rem; line-height: 1.65; }
+  .content-body ul li::before { content: '→'; position: absolute; left: 0; color: var(--orange); font-weight: 700; }
+  .sidebar-card { background: var(--off-white); border: 1.5px solid var(--border); border-radius: 8px; padding: 1.75rem; margin-bottom: 1.5rem; }
+  .sidebar-card h4 { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1rem; color: var(--navy); margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.04em; border-bottom: 2px solid var(--orange); padding-bottom: 0.5rem; }
+  .sidebar-card p { font-size: 0.88rem; color: var(--text-light); line-height: 1.7; margin-bottom: 0.75rem; }
+  .sidebar-card .sidebar-phone { font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 1.4rem; color: var(--navy); text-decoration: none; display: flex; align-items: center; gap: 0.4rem; margin-top: 0.5rem; }
+  .sidebar-card .sidebar-phone:hover { color: var(--orange); }
+  .sidebar-list { list-style: none; padding: 0; margin: 0; }
+  .sidebar-list li { padding: 0.5rem 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 0.5rem; font-size: 0.88rem; color: var(--text-light); }
+  .sidebar-list li:last-child { border-bottom: none; }
+  .sidebar-list .icon { color: var(--orange); font-size: 14px; }
+  .info-box { background: var(--blue-light); border-left: 4px solid var(--blue); border-radius: 0 6px 6px 0; padding: 1.25rem 1.5rem; margin: 1.5rem 0; }
+  .info-box p { color: var(--navy); font-size: 0.93rem; line-height: 1.7; margin: 0; }
+  .product-image-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0 2rem; }
+  .product-image { width: 100%; height: auto; border-radius: 8px; border: 1.5px solid var(--border); background: var(--off-white); display: block; }
+  .spec-table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem; font-size: 0.95rem; }
+  .spec-table th, .spec-table td { padding: 0.75rem 0.9rem; border: 1px solid var(--border); text-align: left; vertical-align: top; }
+  .spec-table th { width: 38%; background: var(--off-white); color: var(--navy); font-family: 'Barlow Condensed', sans-serif; font-size: 0.9rem; letter-spacing: 0.06em; text-transform: uppercase; }
+
+  /* ─── INDUSTRIES PAGE ─── */
+  .industry-section { padding: 3rem 0; border-bottom: 1px solid var(--border); }
+  .industry-section:last-child { border-bottom: none; }
+  .industry-section-grid { display: grid; grid-template-columns: 80px 1fr; gap: 2rem; align-items: start; }
+  .industry-icon-lg { width: 80px; height: 80px; background: var(--blue-light); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--blue); flex-shrink: 0; }
+  .industry-icon-lg .icon { font-size: 36px; margin-right: 0; }
+  .industry-section h3 { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1.4rem; color: var(--navy); margin-bottom: 0.5rem; text-transform: uppercase; }
+  .industry-section p { color: var(--text-light); line-height: 1.8; margin-bottom: 0.75rem; }
+
+  /* ─── ABOUT ─── */
+  .value-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 1rem; }
+  .value-card { background: var(--off-white); border-radius: 8px; padding: 1.5rem; border-top: 3px solid var(--orange); }
+  .value-card h4 { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1rem; color: var(--navy); margin-bottom: 0.5rem; text-transform: uppercase; }
+  .value-card p { font-size: 0.88rem; color: var(--text-light); line-height: 1.65; }
+  .coverage-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; margin-top: 1rem; }
+  .coverage-item { background: var(--navy); border-radius: 6px; padding: 0.75rem 1rem; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.85rem; color: var(--white); text-align: center; text-transform: uppercase; letter-spacing: 0.06em; }
+
+  /* ─── FAQ ─── */
+  .faq-list { max-width: 760px; margin: 0 auto; }
+  .faq-item { border: 1.5px solid var(--border); border-radius: 8px; margin-bottom: 0.75rem; overflow: hidden; }
+  .faq-question { width: 100%; background: var(--white); border: none; padding: 1.25rem 1.5rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer; text-align: left; gap: 1rem; }
+  .faq-question span { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1rem; color: var(--navy); text-transform: uppercase; letter-spacing: 0.03em; line-height: 1.3; }
+  .faq-icon { width: 24px; height: 24px; border-radius: 50%; background: var(--blue-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background 0.2s; color: var(--blue); font-size: 1.1rem; font-weight: 700; }
+  .faq-item.open .faq-icon { background: var(--orange); color: var(--white); }
+  .faq-answer { display: none; padding: 0 1.5rem 1.25rem; }
+  .faq-answer p { font-size: 0.93rem; color: var(--text-light); line-height: 1.8; }
+  .faq-item.open .faq-answer { display: block; }
+
+  /* ─── CONTACT ─── */
+  .contact-grid { display: grid; grid-template-columns: 1fr 400px; gap: 3rem; align-items: start; }
+  .contact-info-card { background: var(--navy); border-radius: 10px; padding: 2rem; color: var(--white); }
+  .contact-info-card h3 { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1.2rem; color: var(--white); margin-bottom: 1.25rem; text-transform: uppercase; }
+  .contact-detail { display: flex; gap: 0.75rem; margin-bottom: 1.25rem; }
+  .contact-detail .icon { color: var(--orange-bright); font-size: 20px; margin-top: 2px; margin-right: 0; }
+  .contact-detail strong { display: block; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(255,255,255,0.5); margin-bottom: 0.15rem; font-weight: 600; }
+  .contact-detail a, .contact-detail span { color: var(--white); text-decoration: none; font-size: 1rem; }
+  .contact-detail a:hover { color: var(--orange-bright); }
+  .emergency-box { background: rgba(255,109,0,0.15); border: 1px solid rgba(255,109,0,0.35); border-radius: 8px; padding: 1.25rem; margin-top: 1.5rem; }
+  .emergency-box p { font-size: 0.85rem; color: rgba(255,255,255,0.75); line-height: 1.65; margin: 0; }
+  .emergency-box strong { color: var(--orange-bright); display: block; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1rem; text-transform: uppercase; margin-bottom: 0.3rem; }
+  .coverage-map { background: var(--off-white); border: 1.5px solid var(--border); border-radius: 8px; padding: 2rem; text-align: center; }
+  .map-wrapper { border-radius: 12px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.1); margin-top: 20px; }
+  .map-wrapper iframe { width: 100%; height: 350px; border: 0; display: block; }
+
+  /* ─── FOOTER ─── */
+  footer { background: #091626; padding: 3.5rem 2rem 1.5rem; }
+  .footer-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2.5rem; margin-bottom: 2.5rem; }
+  .footer-logo { max-height: 50px; width: auto; display: block; }
+  .footer-brand p { font-size: 0.85rem; color: rgba(255,255,255,0.45); margin-top: 0.75rem; line-height: 1.7; max-width: 280px; }
+  .footer-contact-item { display: flex; align-items: center; gap: 0.5rem; color: rgba(255,255,255,0.55); font-size: 0.85rem; margin-top: 0.6rem; }
+  .footer-contact-item a { color: rgba(255,255,255,0.55); text-decoration: none; }
+  .footer-contact-item a:hover { color: var(--white); }
+  .footer-contact-item .icon { color: var(--orange); font-size: 14px; margin-right: 0; }
+  .footer-col h4 { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 0.85rem; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 1rem; }
+  .footer-nav-list { list-style: none; padding: 0; }
+  .footer-nav-list li { margin-bottom: 0.6rem; }
+  .footer-nav-list a { color: rgba(255,255,255,0.58); font-size: 0.88rem; text-decoration: none; cursor: pointer; transition: color 0.2s; }
+  .footer-nav-list a:hover { color: var(--white); }
+  .footer-bottom { max-width: 1200px; margin: 0 auto; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+  .footer-bottom p { font-size: 0.78rem; color: rgba(255,255,255,0.3); }
+  .footer-social { margin-top: 16px; display: flex; gap: 12px; }
+  .footer-social a { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; background: var(--secondary-color); color: #fff; border-radius: 50%; transition: 0.3s; text-decoration: none; }
+  .footer-social a:hover { background: var(--primary-color); transform: translateY(-2px); }
+  .footer-social i { font-size: 14px; }
+  .footer-certifications { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  .footer-cert-logo { height: 40px; width: auto; object-fit: contain; display: block; background: #fff; padding: 6px 10px; border-radius: 4px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      scroll-behavior: auto !important;
+      transition-duration: 0.001ms !important;
+    }
+    .fade-in, .fade-up {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+  }
+
+  /* ─── MOBILE ─── */
+  @media (max-width: 900px) {
+    #site-header { padding: 0 1.25rem; }
+    .logo-image { max-height: 50px; }
+    .header-nav { display: none; }
+    .header-actions { margin-left: auto; gap: 0; }
+    .header-phone, .btn-header-quote { display: none; }
+    .hamburger { display: flex; }
+    .mobile-nav { display: none; position: fixed; top: 68px; left: 0; right: 0; background: var(--navy); z-index: 999; border-bottom: 3px solid var(--orange); padding: 0.75rem 0; max-height: calc(100vh - 68px); overflow-y: auto; }
+    .mobile-nav.open { display: block; }
+    .mobile-nav a { display: block; padding: 0.85rem 1.25rem; color: rgba(255,255,255,0.82); text-decoration: none; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.06em; border-bottom: 1px solid rgba(255,255,255,0.07); }
+    .mobile-nav a:hover { color: var(--white); background: rgba(255,255,255,0.08); }
+    .mobile-nav a:last-child { border-bottom: none; }
+    .hero-grid { grid-template-columns: 1fr; }
+    .intro-strip .container { grid-template-columns: 1fr; }
+    .stat-grid { margin-top: 0; }
+    .services-grid { grid-template-columns: 1fr 1fr; }
+    .why-grid { grid-template-columns: 1fr 1fr; }
+    .industries-grid { grid-template-columns: repeat(2, 1fr); }
+    .steps { grid-template-columns: 1fr; }
+    .steps::before { display: none; }
+    .testimonials-grid { grid-template-columns: 1fr; }
+    .content-grid { grid-template-columns: 1fr; }
+    .three-col { grid-template-columns: 1fr 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .product-image-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .inner-hero-grid { grid-template-columns: 1fr; }
+    .value-cards { grid-template-columns: 1fr; }
+    .coverage-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    #site-header { padding: 0 1rem; }
+    .logo-image { max-height: 46px; }
+    .services-grid { grid-template-columns: 1fr; }
+    .why-grid { grid-template-columns: 1fr; }
+    .industries-grid { grid-template-columns: 1fr 1fr; }
+    .intro-visuals { grid-template-columns: 1fr; }
+    .three-col { grid-template-columns: 1fr; }
+    .two-col { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .stat-grid { grid-template-columns: 1fr 1fr; }
+    .emergency-strip .container { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="site-header">
+  <a class="header-logo" onclick="showPage('home')">
+    <img class="logo-image" src="Assets/Images/Apex Boilers - Logo.png" alt="Apex Boiler Hire Logo" />
+  </a>
+  <nav class="header-nav">
+    <a onclick="showPage('home')">Home</a>
+    <a onclick="showPage('boiler-hire')">Boiler Hire</a>
+    <a onclick="showPage('containerised-boilers')">Containerised Boilers</a>
+    <a onclick="showPage('emergency')">Emergency</a>
+    <a onclick="showPage('planned')">Planned Heating</a>
+    <a onclick="showPage('industries')">Industries</a>
+    <a onclick="showPage('about')">About</a>
+    <a onclick="showPage('faqs')">FAQs</a>
+    <a onclick="showPage('contact')">Contact</a>
+  </nav>
+  <div class="header-actions">
+    <a class="header-phone" href="tel:01236738583">
+      <i class="fas fa-phone icon" aria-hidden="true"></i>
+      <span>01236 738583</span>
+    </a>
+    <a class="btn-header-quote" onclick="showPage('contact')">Request a Quote</a>
+    <button class="hamburger" onclick="toggleMobile()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE NAV -->
+<nav class="mobile-nav" id="mobileNav">
+  <a onclick="showPage('home');toggleMobile()">Home</a>
+  <a onclick="showPage('boiler-hire');toggleMobile()">Boiler Hire</a>
+  <a onclick="showPage('containerised-boilers');toggleMobile()">Containerised Boilers</a>
+  <a onclick="showPage('emergency');toggleMobile()">Emergency Boiler Hire</a>
+  <a onclick="showPage('planned');toggleMobile()">Planned Temporary Heating</a>
+  <a onclick="showPage('industries');toggleMobile()">Industries We Serve</a>
+  <a onclick="showPage('about');toggleMobile()">About Us</a>
+  <a onclick="showPage('faqs');toggleMobile()">FAQs</a>
+  <a onclick="showPage('contact');toggleMobile()">Contact / Quote</a>
+</nav>
+
+<!-- ════════════════════════════════════════════
+     PAGE: HOME
+════════════════════════════════════════════ -->
+<div id="page-home" class="page active">
+
+  <!-- HERO -->
+  <div class="hero">
+    <img class="hero-banner-overlay" src="Assets/Images/Banner/APEX Boilers - Hero Banner.png" alt="">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">24/7 Emergency Response Available</div>
+        <h1>Temporary Boiler Hire<br><em>Across the UK</em></h1>
+        <p class="hero-sub">Fast, reliable boiler hire for commercial and industrial sites. From emergency breakdown cover to planned temporary heating — we keep your building operational.</p>
+        <div class="hero-btns">
+          <a class="btn-primary" onclick="showPage('contact')">
+            <i class="fas fa-screwdriver-wrench icon" aria-hidden="true"></i>
+            Request a Quote
+          </a>
+          <a class="btn-outline" href="tel:01236738583">
+            <i class="fas fa-phone icon" aria-hidden="true"></i>
+            Call Now: 01236 738583
+          </a>
+        </div>
+        <div class="hero-trust">
+          <div class="hero-trust-item">
+            <i class="fas fa-triangle-exclamation icon" aria-hidden="true"></i>
+            24/7 Response
+          </div>
+          <div class="hero-trust-item">
+            <i class="fas fa-location-dot icon" aria-hidden="true"></i>
+            Nationwide Coverage
+          </div>
+          <div class="hero-trust-item">
+            <i class="fas fa-circle-check icon" aria-hidden="true"></i>
+            Gas Safe Compliant
+          </div>
+          <div class="hero-trust-item">
+            <i class="fas fa-building icon" aria-hidden="true"></i>
+            Commercial & Industrial
+          </div>
+        </div>
+      </div>
+      <div class="hero-form-card">
+        <h3>Request a Quote</h3>
+        <p>Tell us your requirement and we'll respond promptly.</p>
+        <div class="form-row">
+          <div class="form-group"><label>Your Name</label><input type="text" placeholder="Full name"></div>
+          <div class="form-group"><label>Company</label><input type="text" placeholder="Organisation"></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Phone</label><input type="tel" placeholder="Contact number"></div>
+          <div class="form-group"><label>Email</label><input type="email" placeholder="Email address"></div>
+        </div>
+        <div class="form-group"><label>Site Location</label><input type="text" placeholder="Town / postcode"></div>
+        <div class="form-group">
+          <label>Requirement Type</label>
+          <select>
+            <option value="">Select type…</option>
+            <option>Emergency – Immediate response required</option>
+            <option>Planned – Refurbishment / shutdown</option>
+            <option>Planned – Permanent system replacement</option>
+            <option>Short-term hire (days/weeks)</option>
+            <option>Long-term hire (months)</option>
+            <option>Unsure – need guidance</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Brief details</label><textarea rows="2" placeholder="Boiler size, building type, duration…"></textarea></div>
+        <button class="btn-submit" onclick="formSubmit()">Send Enquiry →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRUST STRIP -->
+  <div class="trust-strip">
+    <div class="container">
+      <div class="trust-badge"><i class="fas fa-circle-check icon" aria-hidden="true"></i> Gas Safe Registered</div>
+      <div class="trust-badge"><i class="fas fa-triangle-exclamation icon" aria-hidden="true"></i> 24 / 7 Response</div>
+      <div class="trust-badge"><i class="fas fa-location-dot icon" aria-hidden="true"></i> Nationwide UK</div>
+      <div class="trust-badge"><i class="fas fa-circle-check icon" aria-hidden="true"></i> ISO 9001 Quality</div>
+      <div class="trust-badge"><i class="fas fa-location-dot icon" aria-hidden="true"></i> Fast Nationwide Delivery</div>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <section class="intro-strip">
+    <div class="container">
+      <div>
+        <span class="section-label">Who We Are</span>
+        <h2 class="section-title">Your Temporary Heating<br><em>Specialist</em></h2>
+        <p>Apex Boiler Hire provides temporary boiler hire solutions to commercial, industrial, and public sector clients across the United Kingdom. Whether you're facing an unexpected heating failure or planning a scheduled boiler replacement, we supply reliable, performance-proven equipment backed by expert technical support.</p>
+        <p>From containerised boiler units to packaged hot water systems, we match the right hire solution to your site load requirements — and get it operational with minimal disruption to your operation.</p>
+        <a class="btn-primary" style="margin-top:0.5rem" onclick="showPage('boiler-hire')">View Boiler Hire Services →</a>
+      </div>
+      <div class="intro-right">
+        <div class="stat-grid">
+          <div class="stat-card fade-up is-visible"><div class="stat-num">24/7</div><div class="stat-label">Emergency response</div></div>
+          <div class="stat-card fade-up is-visible delay-1"><div class="stat-num">UK</div><div class="stat-label">Nationwide coverage</div></div>
+          <div class="stat-card fade-up is-visible delay-2"><div class="stat-num">Fast</div><div class="stat-label">Delivery & commissioning</div></div>
+          <div class="stat-card fade-up is-visible delay-3"><div class="stat-num">Safe</div><div class="stat-label">Gas Safe & compliant</div></div>
+        </div>
+        <div class="intro-visuals fade-up is-visible delay-2">
+          <img src="Assets/Images/100KW Boiler/Apex Boiler Services - 100 KW Containerised Boiler - 1.png" alt="100kW Containerised Boiler Unit">
+          <img src="Assets/Images/100KW Boiler/Apex Boiler Services - 100 KW Containerised Boiler - 2.png" alt="100kW Containerised Boiler Installation">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section style="background:var(--white)">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:2.5rem">
+        <span class="section-label">Our Services</span>
+        <h2 class="section-title">Temporary Boiler Hire Solutions</h2>
+        <p class="section-sub">We supply a comprehensive range of temporary boiler and hot water hire equipment for commercial and industrial applications across the UK.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" onclick="showPage('containerised-boilers')">
+          <div class="service-icon">
+            <i class="fas fa-fire icon" aria-hidden="true"></i>
+          </div>
+          <h3>Containerised Boiler Hire</h3>
+          <p>Self-contained boiler plant housed in weatherproof containers — suitable for long-term hire and challenging site conditions. Ready to connect.</p>
+          <a class="card-link">Learn More →</a>
+        </div>
+        <div class="service-card" onclick="showPage('boiler-hire')">
+          <div class="service-icon">
+            <i class="fas fa-fire icon" aria-hidden="true"></i>
+          </div>
+          <h3>Packaged Boiler Hire</h3>
+          <p>Pre-wired, pre-plumbed boiler packages for fast deployment. Ideal for buildings requiring rapid temporary heating restoration.</p>
+          <a class="card-link">Learn More →</a>
+        </div>
+        <div class="service-card" onclick="showPage('emergency')">
+          <div class="service-icon" style="background:rgba(242,106,51,0.1);color:var(--orange)">
+            <i class="fas fa-triangle-exclamation icon" aria-hidden="true"></i>
+          </div>
+          <h3>Emergency Boiler Hire</h3>
+          <p>24/7 rapid response to heating failures and plant breakdowns. We minimise downtime for hospitals, schools, care homes, and commercial sites.</p>
+          <a class="card-link" style="color:var(--orange)">Emergency Line →</a>
+        </div>
+        <div class="service-card" onclick="showPage('boiler-hire')">
+          <div class="service-icon">
+            <i class="fas fa-droplet icon" aria-hidden="true"></i>
+          </div>
+          <h3>Hot Water Solutions</h3>
+          <p>Temporary domestic hot water supply for buildings where the primary system has failed or is undergoing maintenance or upgrade works.</p>
+          <a class="card-link">Learn More →</a>
+        </div>
+        <div class="service-card" onclick="showPage('planned')">
+          <div class="service-icon">
+            <i class="fas fa-calendar icon" aria-hidden="true"></i>
+          </div>
+          <h3>Planned Shutdown Support</h3>
+          <p>Continuity of heating and hot water during scheduled maintenance shutdowns, refurbishments, or boiler replacement programmes.</p>
+          <a class="card-link">Learn More →</a>
+        </div>
+        <div class="service-card" onclick="showPage('boiler-hire')">
+          <div class="service-icon">
+            <i class="fas fa-building icon" aria-hidden="true"></i>
+          </div>
+          <h3>Temporary Plant Room</h3>
+          <p>Complete temporary plant room solutions where permanent plant space is unavailable — self-contained, weather-resistant, and fully pipeable.</p>
+          <a class="card-link">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE -->
+  <section class="why-section">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:2.5rem">
+        <span class="section-label" style="color:rgba(255,109,0,0.9)">Why Choose Apex</span>
+        <h2 class="section-title" style="color:var(--white)">Built for<br><em style="color:var(--orange-bright)">Commercial Demand</em></h2>
+        <p class="section-sub" style="color:rgba(255,255,255,0.6)">We understand the operational pressures of running commercial and public sector buildings. Our hire service is structured to deliver fast, dependable results.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-triangle-exclamation icon" aria-hidden="true"></i></div>
+          <h4>Rapid Response</h4>
+          <p>Our emergency line operates 24 hours a day, 7 days a week. We mobilise equipment and engineers quickly to minimise site downtime across the UK.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-circle-check icon" aria-hidden="true"></i></div>
+          <h4>Commercial Expertise</h4>
+          <p>Our engineers have hands-on experience in commercial and industrial heating systems. We understand plant rooms, load calculations, and system integration.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-location-dot icon" aria-hidden="true"></i></div>
+          <h4>Nationwide Delivery</h4>
+          <p>Logistics and equipment delivery across England, Scotland, and Wales. We plan each delivery around site access and installation requirements.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-circle-check icon" aria-hidden="true"></i></div>
+          <h4>Safe and Compliant</h4>
+          <p>All equipment is Gas Safe certified and serviced to current standards. Our engineers hold relevant industry qualifications and work to safe systems.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-screwdriver-wrench icon" aria-hidden="true"></i></div>
+          <h4>Technical Advice</h4>
+          <p>We don't just deliver equipment. We advise on boiler sizing, pipework connections, and commissioning to make sure the hire solution works correctly first time.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-screwdriver-wrench icon" aria-hidden="true"></i></div>
+          <h4>Full Installation Support</h4>
+          <p>From delivery through to commissioning and ongoing support during the hire period, Apex manages the complete temporary heating solution for your site.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES PREVIEW -->
+  <section>
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;margin-bottom:2rem">
+        <div>
+          <span class="section-label">Industries We Serve</span>
+          <h2 class="section-title">Temporary Heating for<br><em>Every Sector</em></h2>
+          <p class="section-sub" style="margin-bottom:0">From critical NHS facilities to industrial manufacturing sites, Apex Boiler Hire delivers temporary solutions that maintain operational continuity regardless of sector.</p>
+        </div>
+        <div style="text-align:right"><a class="btn-primary" onclick="showPage('industries')">All Industries →</a></div>
+      </div>
+      <div class="industries-grid">
+        <div class="industry-chip"><i class="fas fa-building icon" aria-hidden="true"></i> Schools & Education</div>
+        <div class="industry-chip"><i class="fas fa-building icon" aria-hidden="true"></i> Hospitals / NHS</div>
+        <div class="industry-chip"><i class="fas fa-building icon" aria-hidden="true"></i> Care Homes</div>
+        <div class="industry-chip"><i class="fas fa-building icon" aria-hidden="true"></i> Commercial Offices</div>
+        <div class="industry-chip"><i class="fas fa-industry icon" aria-hidden="true"></i> Industrial Facilities</div>
+        <div class="industry-chip"><i class="fas fa-building icon" aria-hidden="true"></i> Leisure Centres</div>
+        <div class="industry-chip"><i class="fas fa-building icon" aria-hidden="true"></i> Public Sector</div>
+        <div class="industry-chip"><i class="fas fa-screwdriver-wrench icon" aria-hidden="true"></i> Construction Projects</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-section">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:3.5rem">
+        <span class="section-label">How It Works</span>
+        <h2 class="section-title">Simple, Structured,<br><em>Dependable</em></h2>
+        <p class="section-sub">From your first call to a fully commissioned boiler on site — we manage the process efficiently at every stage.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num"><span>1</span></div>
+          <h4>Contact Us</h4>
+          <p>Call our team or submit an online enquiry. Available 24/7 for emergencies.</p>
+        </div>
+        <div class="step">
+          <div class="step-num"><span>2</span></div>
+          <h4>Tell Us Your Needs</h4>
+          <p>Describe the site, building type, heating load, and urgency of the requirement.</p>
+        </div>
+        <div class="step">
+          <div class="step-num"><span>3</span></div>
+          <h4>We Assess & Recommend</h4>
+          <p>Our engineers review the load requirements and recommend the correct boiler package.</p>
+        </div>
+        <div class="step">
+          <div class="step-num"><span>4</span></div>
+          <h4>Delivery & Installation</h4>
+          <p>We deliver and connect the equipment — safely, quickly, and with minimal site disruption.</p>
+        </div>
+        <div class="step">
+          <div class="step-num"><span>5</span></div>
+          <h4>Commission & Support</h4>
+          <p>Full commissioning and ongoing support for the duration of the hire period.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMERGENCY STRIP -->
+  <div class="emergency-strip">
+    <div class="container">
+      <div>
+        <h3><i class="fas fa-triangle-exclamation icon" aria-hidden="true"></i>Need urgent temporary heating?</h3>
+        <p>Boiler failure or critical heating loss? Our emergency team is on call now — contact us immediately.</p>
+      </div>
+      <div class="emergency-strip-actions">
+        <a class="emergency-phone" href="tel:01236738583">
+          <i class="fas fa-phone icon" aria-hidden="true"></i>
+          01236 738583
+        </a>
+        <a class="btn-white" onclick="showPage('emergency')">Emergency Hire →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <section style="background:var(--off-white)">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:2.5rem">
+        <span class="section-label">Client Testimonials</span>
+        <h2 class="section-title">Trusted by Facilities Teams<br><em>Across the UK</em></h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>When our main boiler failed in January with 400 pupils in the building, Apex had a temporary unit on site and commissioned within hours. The response was excellent and the equipment worked without issue for the six weeks we needed it.</p>
+          <div class="testimonial-author">
+            <strong>Facilities Manager</strong>
+            <span>Secondary School, West Midlands</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>We used Apex to maintain heating continuity during a full boiler replacement programme across our care home. The planning support was thorough and the temporary setup integrated well with our existing pipework. Would use again without hesitation.</p>
+          <div class="testimonial-author">
+            <strong>Operations Director</strong>
+            <span>Care Home Group, Yorkshire</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>Apex supplied containerised boilers for a large commercial refurbishment project we managed. Delivery was on schedule, the commissioning team knew what they were doing, and we had zero issues throughout a 14-week hire. Competitive on price too.</p>
+          <div class="testimonial-author">
+            <strong>Contracts Manager</strong>
+            <span>M&E Contractor, Greater Manchester</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="container text-center">
+      <span class="section-label" style="color:rgba(255,109,0,0.9)">Get in Touch</span>
+      <h2 class="section-title" style="color:var(--white)">Speak to Apex Boiler Hire<br><em style="color:var(--orange-bright)">Today</em></h2>
+      <p class="section-sub" style="color:rgba(255,255,255,0.6)">Tell us about your temporary heating requirement and one of our engineers will contact you to discuss the right solution.</p>
+      <div class="cta-form-card">
+        <h3>Request a Quote</h3>
+        <p>Complete the form below and we'll respond promptly — or call us directly on <strong>01236 738583</strong>.</p>
+        <div class="three-col">
+          <div class="form-group"><label>Name</label><input type="text" placeholder="Full name"></div>
+          <div class="form-group"><label>Company</label><input type="text" placeholder="Organisation"></div>
+          <div class="form-group"><label>Phone</label><input type="tel" placeholder="Contact number"></div>
+        </div>
+        <div class="two-col">
+          <div class="form-group"><label>Email</label><input type="email" placeholder="Email address"></div>
+          <div class="form-group"><label>Site Location</label><input type="text" placeholder="Town / postcode"></div>
+        </div>
+        <div class="two-col">
+          <div class="form-group">
+            <label>Project Type</label>
+            <select>
+              <option value="">Select type…</option>
+              <option>Emergency hire</option>
+              <option>Planned shutdown cover</option>
+              <option>Boiler replacement continuity</option>
+              <option>Construction / refurbishment</option>
+              <option>School or education facility</option>
+              <option>Hospital / healthcare</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Estimated Duration</label>
+            <select>
+              <option value="">Select duration…</option>
+              <option>Days (emergency)</option>
+              <option>1–4 weeks</option>
+              <option>1–3 months</option>
+              <option>3–6 months</option>
+              <option>6 months+</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group"><label>Additional Details</label><textarea rows="3" placeholder="Tell us about the site, boiler output required, access constraints, or any other relevant information…"></textarea></div>
+        <button class="btn-submit" onclick="formSubmit()">Submit Enquiry →</button>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ════════════════════════════════════════════
+     PAGE: BOILER HIRE
+════════════════════════════════════════════ -->
+<div id="page-boiler-hire" class="page">
+  <div class="inner-hero">
+    <div class="inner-hero-grid">
+      <div>
+        <div class="breadcrumb"><a onclick="showPage('home')">Home</a> › Boiler Hire</div>
+        <h1>Commercial &amp; Industrial<br><em>Boiler Hire UK</em></h1>
+        <p>Temporary boiler hire solutions for the commercial and public sector — delivered and commissioned across the United Kingdom. Emergency and planned hire available.</p>
+      </div>
+      <div class="inner-hero-cta">
+        <a class="btn-primary" onclick="showPage('contact')">Request a Quote</a>
+        <a class="btn-outline" href="tel:01236738583"><i class="fas fa-phone icon" aria-hidden="true"></i>01236 738583</a>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="content-grid">
+        <div class="content-body">
+          <h2>Temporary Boiler Hire — What We Provide</h2>
+          <p>Apex Boiler Hire provides temporary boiler hire across the UK for commercial, industrial, and public sector clients. Our hire fleet includes a range of packaged and containerised boiler units capable of delivering heating and domestic hot water to buildings of all sizes and types.</p>
+          <p>Whether you require a short-term emergency unit to restore heating following a plant failure, or a long-term hire solution to maintain continuity throughout a capital replacement project, we have the equipment and technical capability to support you.</p>
+
+          <h2>Types of Hire Equipment</h2>
+          <ul>
+            <li><strong>Containerised boiler units</strong> — self-contained, weatherproof, suitable for external positioning alongside the building</li>
+            <li><strong>Packaged boiler systems</strong> — pre-wired and pre-plumbed for rapid connection to existing pipework</li>
+            <li><strong>Skid-mounted boiler plant</strong> — flexible configurations for industrial and plant room applications</li>
+            <li><strong>Temporary hot water units</strong> — calorifiers and DHW generation for buildings requiring domestic hot water supply</li>
+            <li><strong>Boiler ancillaries</strong> — expansion vessels, pumps, controls, flue systems, and fuel storage where required</li>
+          </ul>
+
+          <h2>Boiler Outputs Available</h2>
+          <p>Our hire fleet covers a wide range of outputs, from smaller commercial units serving offices and schools, through to high-output industrial plant suitable for manufacturing facilities, large healthcare estates, and multi-building sites. Our engineers will calculate the correct output based on your building's heating load and hot water demand.</p>
+
+          <h2>Fuel Types</h2>
+          <ul>
+            <li>Natural gas (mains connected)</li>
+            <li>LPG (where mains gas is not available)</li>
+            <li>Oil (available for specific applications — please enquire)</li>
+          </ul>
+
+          <h2>Delivery, Installation & Commissioning</h2>
+          <p>All hire equipment is delivered by our logistics team and installed by qualified gas engineers. We manage the full process from site assessment through to commissioning and handover, including connection to existing pipework, flue installation, and controls set-up.</p>
+          <p>We can also supply and install temporary pipework, pump sets, and mechanical connections as part of the overall hire package.</p>
+
+          <div class="info-box">
+            <p><strong>Note on Gas Safe compliance:</strong> All Apex Boiler Hire engineers hold current Gas Safe registration and are competent to work on commercial gas plant. All installations are carried out in accordance with current Gas Safety (Installation and Use) Regulations.</p>
+          </div>
+
+          <h2>Hire Duration</h2>
+          <p>We accommodate both short-term and long-term hire requirements. Hire periods can run from a matter of days in an emergency scenario through to many months for capital works programmes. We will agree a hire period at the outset and can extend with reasonable notice should your project timescale change.</p>
+
+          <h2>Get a Quote for Temporary Boiler Hire</h2>
+          <p>Contact our team today to discuss your requirement. We'll ask about your site, building type, load requirements, and urgency, and provide a competitive quotation promptly.</p>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1rem">
+            <a class="btn-primary" onclick="showPage('contact')">Request a Quote</a>
+            <a class="btn-outline" style="color:var(--navy);border-color:var(--border)" onclick="showPage('emergency')">Emergency Hire</a>
+          </div>
+        </div>
+        <div>
+          <div class="sidebar-card">
+            <h4>Need a Quote?</h4>
+            <p>Call our team or submit an enquiry and we'll respond promptly with technical advice and pricing.</p>
+            <a class="sidebar-phone" href="tel:01236738583">
+              <i class="fas fa-phone icon" aria-hidden="true"></i>
+              01236 738583
+            </a>
+            <a class="btn-submit" style="display:block;text-align:center;text-decoration:none;margin-top:0.75rem;border-radius:4px;padding:0.75rem" onclick="showPage('contact')">Request a Quote</a>
+          </div>
+          <div class="sidebar-card">
+            <h4>Our Services</h4>
+            <ul class="sidebar-list">
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Containerised Boiler Hire</li>
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Packaged Boiler Hire</li>
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Emergency Boiler Hire</li>
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Temporary Hot Water</li>
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Planned Shutdown Cover</li>
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Temporary Plant Room</li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h4>Key Facts</h4>
+            <ul class="sidebar-list">
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> 24/7 emergency response</li>
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Gas Safe registered engineers</li>
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Nationwide UK delivery</li>
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Short & long-term hire</li>
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Full commissioning service</li>
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Support during hire period</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="emergency-strip">
+    <div class="container">
+      <div><h3>Boiler failure? Call us now — 24/7</h3><p>We respond to commercial heating emergencies across the UK.</p></div>
+      <div class="emergency-strip-actions">
+        <a class="emergency-phone" href="tel:01236738583"><i class="fas fa-phone icon" aria-hidden="true"></i>01236 738583</a>
+        <a class="btn-white" onclick="showPage('emergency')">Emergency Hire →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════
+     PAGE: CONTAINERISED BOILERS
+════════════════════════════════════════════ -->
+<div id="page-containerised-boilers" class="page">
+  <section id="containerised-boilers" class="page-section">
+    <div class="inner-hero">
+      <div class="inner-hero-grid">
+        <div>
+          <div class="breadcrumb"><a onclick="showPage('home')">Home</a> › <a onclick="showPage('boiler-hire')">Boiler Hire</a> › Containerised Boilers</div>
+          <h1>Containerised Boiler Hire<br><em>(100kW)</em></h1>
+          <p>Compact 100kW containerised boiler hire for temporary heating and hot water applications. A practical, weatherproof solution for commercial sites needing fast deployment and reliable performance.</p>
+        </div>
+        <div class="inner-hero-cta">
+          <a class="btn-primary" onclick="showPage('contact')">Request a Quote</a>
+          <a class="btn-outline" href="tel:01236738583"><i class="fas fa-phone icon" aria-hidden="true"></i>01236 738583</a>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <div class="content-grid">
+          <div class="content-body">
+            <h2>100kW Containerised Boiler Unit</h2>
+            <p>Our 100kW containerised boiler is designed for temporary heating, domestic hot water support, planned shutdowns, and emergency boiler cover. The unit is housed in a compact 10ft container for external siting and straightforward connection to existing services.</p>
+
+            <div class="product-image-grid">
+              <img class="product-image" src="Assets/Images/100KW Boiler/Apex Boiler Services - 100 KW Containerised Boiler - 1.png" alt="100kW Containerised Boiler Unit">
+              <img class="product-image" src="Assets/Images/100KW Boiler/Apex Boiler Services - 100 KW Containerised Boiler - 2.png" alt="100kW Containerised Boiler Unit">
+            </div>
+
+            <h2>Key Features</h2>
+            <ul>
+              <li>100kW output</li>
+              <li>10ft container</li>
+              <li>Gas/Oil fuel options</li>
+              <li>Plug &amp; play 13 amp electrical connection</li>
+              <li>Dual pumps</li>
+              <li>DHW system</li>
+              <li>Frost protection</li>
+              <li>Flexible connections</li>
+            </ul>
+
+            <h2>Technical Specs</h2>
+            <table class="spec-table">
+              <tbody>
+                <tr><th>Output</th><td>100kW</td></tr>
+                <tr><th>Container Size</th><td>10ft container</td></tr>
+                <tr><th>Fuel</th><td>Gas/Oil</td></tr>
+                <tr><th>Electrical Supply</th><td>13 amp plug &amp; play</td></tr>
+                <tr><th>Pumps</th><td>Dual pump arrangement</td></tr>
+                <tr><th>Hot Water</th><td>DHW system included</td></tr>
+                <tr><th>Protection</th><td>Frost protection</td></tr>
+                <tr><th>Connections</th><td>Flexible temporary connections</td></tr>
+              </tbody>
+            </table>
+
+            <h2>What’s Included</h2>
+            <ul>
+              <li>Installation by qualified engineers</li>
+              <li>Transport to site</li>
+              <li>Service and support during the hire period</li>
+            </ul>
+
+            <div class="info-box">
+              <p><strong>Need help specifying the right unit?</strong> Tell us your site type, existing boiler output, and heating or hot water demand. Our team will confirm whether the 100kW containerised boiler is suitable for your requirement.</p>
+            </div>
+
+            <h2>Get a Quote</h2>
+            <p>Speak to Apex Boiler Hire about 100kW containerised boiler hire for emergency cover, planned works, or temporary plant room support.</p>
+            <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1rem">
+              <a class="btn-primary" onclick="showPage('contact')">Request a Quote</a>
+              <a class="btn-outline" style="color:var(--navy);border-color:var(--border)" href="tel:01236738583"><i class="fas fa-phone icon" aria-hidden="true"></i>01236 738583</a>
+            </div>
+          </div>
+          <div>
+            <div class="sidebar-card">
+              <h4>100kW Boiler Hire</h4>
+              <p>Compact containerised boiler plant for temporary heating and DHW support.</p>
+              <a class="sidebar-phone" href="tel:01236738583"><i class="fas fa-phone icon" aria-hidden="true"></i>01236 738583</a>
+              <a class="btn-submit" style="display:block;text-align:center;text-decoration:none;margin-top:0.75rem;border-radius:4px;padding:0.75rem" onclick="showPage('contact')">Request a Quote</a>
+            </div>
+            <div class="sidebar-card">
+              <h4>At a Glance</h4>
+              <ul class="sidebar-list">
+                <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> 100kW output</li>
+                <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> 10ft container</li>
+                <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Gas/Oil</li>
+                <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Plug &amp; play power</li>
+                <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> DHW capable</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="emergency-strip">
+      <div class="container">
+        <div><h3>Need a 100kW containerised boiler?</h3><p>Talk to our team about delivery, installation, and hire availability.</p></div>
+        <div class="emergency-strip-actions">
+          <a class="emergency-phone" href="tel:01236738583"><i class="fas fa-phone icon" aria-hidden="true"></i>01236 738583</a>
+          <a class="btn-white" onclick="showPage('contact')">Request a Quote →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ════════════════════════════════════════════
+     PAGE: EMERGENCY
+════════════════════════════════════════════ -->
+<div id="page-emergency" class="page">
+  <div class="inner-hero" style="background:linear-gradient(135deg,var(--navy) 0%,var(--orange) 50%,var(--orange-bright) 100%)">
+    <div class="inner-hero-grid">
+      <div>
+        <div class="breadcrumb"><a onclick="showPage('home')">Home</a> › Emergency Boiler Hire</div>
+        <h1><em>Emergency</em><br>Boiler Hire UK</h1>
+        <p>Rapid response temporary boiler hire for commercial and industrial heating emergencies. Available 24/7, 365 days a year. We minimise your downtime.</p>
+      </div>
+      <div class="inner-hero-cta">
+        <a class="btn-white" href="tel:01236738583" style="font-size:1.1rem;padding:1rem 2rem"><i class="fas fa-phone icon" aria-hidden="true"></i>Call Now — 01236 738583</a>
+        <a class="btn-outline" onclick="showPage('contact')">Submit Emergency Enquiry</a>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="content-grid">
+        <div class="content-body">
+          <div class="info-box" style="background:rgba(242,106,51,0.08);border-color:var(--orange)">
+            <p><strong><i class="fas fa-triangle-exclamation icon" aria-hidden="true"></i>Emergency Hire Available Now:</strong> If you have a live heating failure, call us immediately on <a href="tel:01236738583" style="color:var(--orange);font-weight:700">01236 738583</a>. Our emergency team will discuss your requirement and mobilise equipment as quickly as possible.</p>
+          </div>
+
+          <h2>When You Need Emergency Boiler Hire</h2>
+          <p>Boiler failures happen without warning. When a primary heating plant fails in a school, hospital, care home, or commercial building, the impact can be serious — particularly in winter months or where vulnerable people are present.</p>
+          <p>Apex Boiler Hire provides emergency boiler hire to restore temporary heating and hot water to your site with minimum delay. We operate a 24/7 response service and maintain a fleet of hire-ready equipment.</p>
+
+          <h2>Typical Emergency Hire Scenarios</h2>
+          <ul>
+            <li>Primary boiler failure with no backup capacity</li>
+            <li>Heat exchanger or pressure vessel failure requiring plant shutdown</li>
+            <li>Controls or burner failure awaiting parts or specialist repair</li>
+            <li>Fire, flood, or mechanical damage to plant room equipment</li>
+            <li>Failure of boiler during extreme cold weather</li>
+            <li>Urgent loss of domestic hot water supply</li>
+            <li>Plant corrosion or sludge failure requiring emergency isolation</li>
+          </ul>
+
+          <h2>Who We Support in Emergencies</h2>
+          <ul>
+            <li>Schools and academies — protecting pupils, staff, and exam timetables</li>
+            <li>NHS buildings and hospitals — maintaining critical heating in clinical areas</li>
+            <li>Care homes and residential facilities — protecting vulnerable occupants</li>
+            <li>Local authority buildings and community centres</li>
+            <li>Commercial offices, hotels, and leisure facilities</li>
+            <li>Industrial and manufacturing sites requiring process heat or heating</li>
+            <li>Housing associations and social landlords</li>
+          </ul>
+
+          <h2>The Emergency Hire Process</h2>
+          <p><strong>Step 1 — Call us immediately.</strong> Our team will take details of your site, building type, heating load, and urgency. We'll ask about available connection points, access, and fuel supply.</p>
+          <p><strong>Step 2 — We confirm availability and mobilise.</strong> We identify the most suitable unit from our hire fleet, confirm delivery logistics, and dispatch equipment and engineers.</p>
+          <p><strong>Step 3 — Delivery and installation.</strong> Our engineers arrive with the temporary boiler and associated equipment. We connect to your existing pipework, install flue systems, and commission the unit.</p>
+          <p><strong>Step 4 — Handover and support.</strong> Once commissioned, we brief your site team on operation and remain available for support throughout the hire period.</p>
+
+          <h2>Minimising Your Downtime</h2>
+          <p>We understand that every hour without heating in a critical building carries a cost — operational, reputational, and in some cases welfare-related. Our emergency response is structured to deliver equipment to site and achieve commissioning as quickly as logistics permit.</p>
+          <p>In many cases, we can achieve same-day or next-morning delivery for sites within our logistics network. Response time will depend on your location, site access requirements, and the complexity of connection.</p>
+
+          <div class="info-box">
+            <p><strong>Tip:</strong> Keep a record of your primary boiler's output (kW or BTU), fuel type, and main flow/return connection sizes. This information helps us specify the correct hire unit and saves valuable time during an emergency call-out.</p>
+          </div>
+        </div>
+        <div>
+          <div class="sidebar-card" style="background:var(--orange);border-color:var(--orange)">
+            <h4 style="color:var(--white);border-color:rgba(255,255,255,0.3)">Emergency Line — 24/7</h4>
+            <p style="color:rgba(255,255,255,0.85)">Call now and speak to our emergency response team.</p>
+            <a class="sidebar-phone" href="tel:01236738583" style="color:var(--white);font-size:1.6rem"><i class="fas fa-phone icon" aria-hidden="true"></i>01236 738583</a>
+            <a class="btn-white" style="display:block;text-align:center;text-decoration:none;margin-top:0.75rem;border-radius:4px;padding:0.75rem;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:0.95rem;letter-spacing:0.06em;text-transform:uppercase" onclick="showPage('contact')">Online Enquiry</a>
+          </div>
+          <div class="sidebar-card">
+            <h4>What to Tell Us</h4>
+            <ul class="sidebar-list">
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Site address & postcode</li>
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Building type & occupancy</li>
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Existing boiler output (kW if known)</li>
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Fuel type (gas / LPG / oil)</li>
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Nature of the failure</li>
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Site access constraints</li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h4>Emergency Hire Facts</h4>
+            <ul class="sidebar-list">
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Available 24/7 including weekends</li>
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Nationwide UK response</li>
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Gas Safe certified installation</li>
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Full commissioning on site</li>
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Support throughout hire period</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ════════════════════════════════════════════
+     PAGE: PLANNED HEATING
+════════════════════════════════════════════ -->
+<div id="page-planned" class="page">
+  <div class="inner-hero">
+    <div class="inner-hero-grid">
+      <div>
+        <div class="breadcrumb"><a onclick="showPage('home')">Home</a> › Planned Temporary Heating</div>
+        <h1>Planned<br><em>Temporary Heating</em></h1>
+        <p>Reliable continuity of heating and hot water during scheduled shutdowns, boiler replacement programmes, and major refurbishment works across the UK.</p>
+      </div>
+      <div class="inner-hero-cta">
+        <a class="btn-primary" onclick="showPage('contact')">Request a Quote</a>
+        <a class="btn-outline" href="tel:01236738583"><i class="fas fa-phone icon" aria-hidden="true"></i>01236 738583</a>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="content-grid">
+        <div class="content-body">
+          <h2>Planned Temporary Heating Solutions</h2>
+          <p>Not every temporary boiler hire requirement is an emergency. Many of our clients use Apex Boiler Hire as part of a well-planned capital works or maintenance programme — providing continuity of heating and hot water while permanent systems are upgraded, replaced, or refurbished.</p>
+          <p>Planning ahead allows us to ensure the right equipment is correctly specified, logistics are agreed in advance, and the installation is completed before the existing plant goes offline. This approach results in a smoother project with minimal disruption to the building's occupants.</p>
+
+          <h2>Typical Planned Hire Scenarios</h2>
+          <ul>
+            <li>Planned boiler replacement — temporary cover while the permanent plant is removed and new equipment installed</li>
+            <li>School summer or holiday shutdown programmes — heating system overhaul with temporary cover if works overrun</li>
+            <li>Hospital and healthcare capital programmes — maintaining LTHW and DHW to wards and clinical areas</li>
+            <li>Care home upgrades — no interruption to heating for vulnerable residents during works</li>
+            <li>Commercial refurbishment — temporary heating plant supporting phased plant room upgrades</li>
+            <li>New-build and construction — temporary heat source during building commissioning</li>
+            <li>District heating interruptions — localised boiler hire bridging supply during main network works</li>
+          </ul>
+
+          <h2>Working with M&amp;E Contractors and Consultants</h2>
+          <p>Apex Boiler Hire works with mechanical and electrical contractors, consulting engineers, and directly with facilities managers. If you are specifying a temporary heating solution as part of a larger project, our team can provide technical input at the specification stage, confirm equipment compatibility, and issue hire proposals in a format suitable for inclusion in tender documentation.</p>
+
+          <h2>School Holiday Shutdown Programmes</h2>
+          <p>Schools and academies frequently carry out boiler replacement and heating system overhauls during summer and half-term shutdowns. If works overrun into term time, the consequences are significant. Apex Boiler Hire can provide standby hire units that are ready to deploy at short notice, providing a contingency that protects your programme and keeps pupils in school.</p>
+
+          <h2>Healthcare and Care Facility Continuity</h2>
+          <p>NHS buildings, private hospitals, and care homes operate under strict requirements for heating and hot water continuity. Patients and residents cannot be exposed to heating failure. We have experience supporting healthcare facilities during capital replacement programmes and understand the importance of maintaining supply at all times.</p>
+
+          <h2>Early Engagement — Getting the Specification Right</h2>
+          <p>Early engagement with our team allows us to properly assess the site, calculate the correct boiler output required, identify connection points, plan the flue route, and confirm fuel supply arrangements. This upfront work results in a faster, lower-risk installation when the time comes.</p>
+
+          <div class="info-box">
+            <p><strong>Speak to our team early in your project.</strong> We can contribute to feasibility, help with specification, and ensure the temporary heating solution is correctly sized and integrated from day one.</p>
+          </div>
+
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem">
+            <a class="btn-primary" onclick="showPage('contact')">Discuss Your Project</a>
+            <a class="btn-outline" style="color:var(--navy);border-color:var(--border)" onclick="showPage('boiler-hire')">View Equipment</a>
+          </div>
+        </div>
+        <div>
+          <div class="sidebar-card">
+            <h4>Discuss Your Project</h4>
+            <p>Speak to our team early and we'll help you plan the right temporary heating solution.</p>
+            <a class="sidebar-phone" href="tel:01236738583"><i class="fas fa-phone icon" aria-hidden="true"></i>01236 738583</a>
+            <a class="btn-submit" style="display:block;text-align:center;text-decoration:none;margin-top:0.75rem;border-radius:4px;padding:0.75rem" onclick="showPage('contact')">Request a Quote</a>
+          </div>
+          <div class="sidebar-card">
+            <h4>Planned Hire Benefits</h4>
+            <ul class="sidebar-list">
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Pre-agreed delivery schedule</li>
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Correct equipment specification</li>
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Works integration support</li>
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Reduced programme risk</li>
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Occupant continuity maintained</li>
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Flexible hire extensions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ════════════════════════════════════════════
+     PAGE: INDUSTRIES
+════════════════════════════════════════════ -->
+<div id="page-industries" class="page">
+  <div class="inner-hero">
+    <div class="inner-hero-grid">
+      <div>
+        <div class="breadcrumb"><a onclick="showPage('home')">Home</a> › Industries We Serve</div>
+        <h1>Industries<br><em>We Serve</em></h1>
+        <p>Apex Boiler Hire provides temporary boiler solutions to a broad range of commercial, public sector, and industrial clients across the United Kingdom.</p>
+      </div>
+      <div class="inner-hero-cta">
+        <a class="btn-primary" onclick="showPage('contact')">Request a Quote</a>
+        <a class="btn-outline" href="tel:01236738583"><i class="fas fa-phone icon" aria-hidden="true"></i>01236 738583</a>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="industry-section">
+        <div class="industry-section-grid">
+          <div class="industry-icon-lg"><i class="fas fa-building icon-lg" aria-hidden="true"></i></div>
+          <div>
+            <h3>Education — Schools, Colleges &amp; Universities</h3>
+            <p>Schools and educational establishments cannot function without adequate heating and hot water. When a boiler fails during term time, the building may face closure — affecting pupils, staff, and in some cases examination schedules.</p>
+            <p>Apex Boiler Hire provides emergency boiler hire for schools at short notice, and planned hire for education facilities undertaking boiler replacement or heating system upgrades during school holidays. We understand the particular time pressures involved in holiday-period works and can support with contingency planning.</p>
+            <ul>
+              <li>Emergency cover for unexpected boiler failure during term time</li>
+              <li>Planned hire for summer holiday boiler replacement programmes</li>
+              <li>Contingency standby units available for high-risk replacement projects</li>
+              <li>Support for local authorities, academy trusts, and independent schools</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="industry-section">
+        <div class="industry-section-grid">
+          <div class="industry-icon-lg" style="background:rgba(230,81,0,0.08);color:var(--orange)"><i class="fas fa-building icon-lg" aria-hidden="true"></i></div>
+          <div>
+            <h3>Healthcare — Hospitals, NHS Sites &amp; Clinics</h3>
+            <p>Healthcare facilities operate under strict requirements for heating and domestic hot water. Patient welfare and infection control are critically dependent on maintaining adequate temperatures throughout clinical and residential areas.</p>
+            <p>Apex Boiler Hire has experience supporting NHS and private healthcare estates during capital replacement programmes and emergency situations. We are familiar with the operational constraints and approval processes involved in working within healthcare environments.</p>
+            <ul>
+              <li>Maintaining heating to wards and clinical spaces during plant replacement</li>
+              <li>Emergency response to heating plant failure in occupied hospitals</li>
+              <li>Support for phased boiler replacement across complex healthcare estates</li>
+              <li>Compliance with NHS HTM guidance and health and safety requirements</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="industry-section">
+        <div class="industry-section-grid">
+          <div class="industry-icon-lg"><i class="fas fa-building icon-lg" aria-hidden="true"></i></div>
+          <div>
+            <h3>Care Homes &amp; Residential Facilities</h3>
+            <p>Care homes, residential units, and facilities housing elderly or vulnerable people face the most serious consequences from heating failure. Regulatory requirements and the duty of care to residents mean that a temporary boiler solution must be in place as quickly as possible.</p>
+            <p>We prioritise healthcare and care sector emergencies and understand the particular urgency involved. Our team will work with you to restore heating with the minimum possible delay.</p>
+            <ul>
+              <li>Highest priority response to care sector heating failures</li>
+              <li>Temporary heating and domestic hot water supply</li>
+              <li>Support for CQC-registered operators and housing associations</li>
+              <li>Continuity during planned boiler upgrades and refurbishments</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="industry-section">
+        <div class="industry-section-grid">
+          <div class="industry-icon-lg"><i class="fas fa-building icon-lg" aria-hidden="true"></i></div>
+          <div>
+            <h3>Commercial Property &amp; Offices</h3>
+            <p>Commercial landlords, facilities managers, and property management companies rely on functional building services to maintain tenancy, meet lease obligations, and protect asset value. A heating failure in an occupied commercial building creates immediate pressure to restore service.</p>
+            <p>Apex Boiler Hire can assist with emergency cover or provide planned temporary heating during building refurbishment, mechanical services upgrade, or boiler plant replacement.</p>
+            <ul>
+              <li>Support for multi-let commercial offices and business parks</li>
+              <li>Rapid response for landlord obligations during tenanted periods</li>
+              <li>Planned hire during HVAC and plant room upgrades</li>
+              <li>Temporary heating during building fit-out and refurbishment</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="industry-section">
+        <div class="industry-section-grid">
+          <div class="industry-icon-lg" style="background:rgba(21,101,192,0.08);color:var(--blue)"><i class="fas fa-industry icon-lg" aria-hidden="true"></i></div>
+          <div>
+            <h3>Industrial &amp; Manufacturing Facilities</h3>
+            <p>Industrial sites often depend on process heat and space heating to maintain production output and meet health and safety standards for workers. A heating failure in a large industrial facility can have significant operational and commercial consequences.</p>
+            <p>We supply industrial-capacity temporary boiler plant to manufacturing, food production, pharmaceutical, logistics, and general industrial clients. Our engineers have experience working within industrial environments and with the associated site safety requirements.</p>
+            <ul>
+              <li>High-output temporary boiler plant for large industrial spaces</li>
+              <li>Process heat and space heating applications</li>
+              <li>Support for sites with complex pipework and system configurations</li>
+              <li>Compliance with site safety rules and permit-to-work requirements</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="industry-section">
+        <div class="industry-section-grid">
+          <div class="industry-icon-lg"><i class="fas fa-building icon-lg" aria-hidden="true"></i></div>
+          <div>
+            <h3>Local Authority &amp; Public Buildings</h3>
+            <p>Councils, public sector bodies, and local authority-managed buildings serve communities and often house essential public services. Heating failures in these facilities affect a wide range of service users, including the elderly, vulnerable, and those using council services.</p>
+            <p>We have experience working with local authorities and public sector procurement frameworks and can support emergency and planned temporary heating requirements across a range of public building types.</p>
+            <ul>
+              <li>Leisure centres, libraries, and community halls</li>
+              <li>Council offices and public service buildings</li>
+              <li>Housing association communal heating</li>
+              <li>Public sector procurement-compatible pricing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="emergency-strip">
+    <div class="container">
+      <div><h3>Serving your sector — UK-wide</h3><p>Whatever your sector, Apex Boiler Hire can provide the right temporary heating solution.</p></div>
+      <div class="emergency-strip-actions">
+        <a class="emergency-phone" href="tel:01236738583"><i class="fas fa-phone icon" aria-hidden="true"></i>01236 738583</a>
+        <a class="btn-white" onclick="showPage('contact')">Request a Quote →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════
+     PAGE: ABOUT
+════════════════════════════════════════════ -->
+<div id="page-about" class="page">
+  <div class="inner-hero">
+    <div class="inner-hero-grid">
+      <div>
+        <div class="breadcrumb"><a onclick="showPage('home')">Home</a> › About Us</div>
+        <h1>About<br><em>Apex Boiler Hire</em></h1>
+        <p>An engineering-led temporary heating specialist serving commercial, industrial, and public sector clients across the United Kingdom.</p>
+      </div>
+      <div class="inner-hero-cta">
+        <a class="btn-primary" onclick="showPage('contact')">Get in Touch</a>
+        <a class="btn-outline" href="tel:01236738583"><i class="fas fa-phone icon" aria-hidden="true"></i>01236 738583</a>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="content-grid">
+        <div class="content-body">
+          <h2>Company Overview</h2>
+          <p>Apex Boiler Hire is a UK temporary boiler hire specialist, providing commercial and industrial clients with reliable heating and hot water solutions for emergency and planned temporary requirements. We supply, deliver, install, commission, and support temporary boiler plant across England, Scotland, and Wales.</p>
+          <p>We work directly with facilities managers, M&E contractors, main contractors, local authorities, NHS trusts, schools, care homes, and commercial property managers — providing practical, technically sound heating solutions that keep buildings operational.</p>
+
+          <h2>Our Mission</h2>
+          <p>To be the temporary boiler hire partner that commercial clients in the UK can rely on — delivering reliable equipment, expert installation, and dependable support from the first call to the end of the hire period.</p>
+
+          <h2>Our Values</h2>
+          <div class="value-cards">
+            <div class="value-card">
+              <h4>Reliability</h4>
+              <p>We deliver what we commit to. Our equipment is well maintained, our engineers are competent, and our logistics are planned to meet your timescales.</p>
+            </div>
+            <div class="value-card">
+              <h4>Technical Integrity</h4>
+              <p>We give honest technical advice. If a different solution is better suited to your site, we'll tell you. Our reputation depends on getting it right.</p>
+            </div>
+            <div class="value-card">
+              <h4>Responsiveness</h4>
+              <p>We recognise that temporary heating requirements are often urgent. We are structured to respond quickly and communicate clearly throughout.</p>
+            </div>
+            <div class="value-card">
+              <h4>Safety</h4>
+              <p>All installations are carried out safely, compliantly, and to current Gas Safety regulations. We hold appropriate certifications and do not cut corners.</p>
+            </div>
+            <div class="value-card">
+              <h4>Customer Focus</h4>
+              <p>We work around your operational requirements. Minimising disruption to your building and occupants is central to how we plan and deliver each job.</p>
+            </div>
+            <div class="value-card">
+              <h4>Practical Problem Solving</h4>
+              <p>Every site is different. We bring engineering judgement and practical experience to each installation, finding solutions that work in the real world.</p>
+            </div>
+          </div>
+
+          <h2>Service Coverage</h2>
+          <p>Apex Boiler Hire covers the whole of the United Kingdom, including England, Scotland, and Wales. We deliver to urban, suburban, rural, and remote sites across all UK regions.</p>
+          <div class="coverage-grid">
+            <div class="coverage-item">London</div>
+            <div class="coverage-item">South East</div>
+            <div class="coverage-item">South West</div>
+            <div class="coverage-item">Midlands</div>
+            <div class="coverage-item">North West</div>
+            <div class="coverage-item">North East</div>
+            <div class="coverage-item">Yorkshire</div>
+            <div class="coverage-item">East of England</div>
+            <div class="coverage-item">Wales</div>
+            <div class="coverage-item">Scotland</div>
+            <div class="coverage-item">Northern Ireland</div>
+            <div class="coverage-item">UK-wide</div>
+          </div>
+
+          <h2>Our Team</h2>
+          <p>Apex Boiler Hire is staffed by engineers and industry professionals with experience in commercial gas engineering, mechanical services contracting, plant hire, and facilities management. Our field engineers hold Gas Safe registration for commercial work and maintain current qualifications for the plant and systems we supply.</p>
+          <p>Our operations team handles logistics, hire administration, and technical support throughout the hire period, ensuring a managed and responsive service from enquiry through to equipment collection.</p>
+
+          <h2>Accreditations & Compliance</h2>
+          <ul>
+            <li>Gas Safe registered — commercial gas plant</li>
+            <li>Public liability and employer's liability insurance held</li>
+            <li>RAMS (Risk Assessments and Method Statements) available on request</li>
+            <li>All engineers hold current industry qualifications</li>
+            <li>Equipment maintained and serviced to manufacturer specification</li>
+          </ul>
+        </div>
+        <div>
+          <div class="sidebar-card">
+            <h4>Contact Apex Boiler Hire</h4>
+            <p>Speak to our team about your temporary heating requirement.</p>
+            <a class="sidebar-phone" href="tel:01236738583"><i class="fas fa-phone icon" aria-hidden="true"></i>01236 738583</a>
+            <p style="margin-top:0.75rem;font-size:0.85rem">Or email: <a href="mailto:info@atechheat.co.uk" style="color:var(--blue)">info@atechheat.co.uk</a></p>
+            <a class="btn-submit" style="display:block;text-align:center;text-decoration:none;margin-top:0.75rem;border-radius:4px;padding:0.75rem" onclick="showPage('contact')">Request a Quote</a>
+          </div>
+          <div class="sidebar-card">
+            <h4>Accreditations</h4>
+            <ul class="sidebar-list">
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Gas Safe Registered</li>
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Public & Employer's Liability</li>
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> Fully Insured Operations</li>
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> RAMS on Request</li>
+              <li><i class="fas fa-circle-check icon" aria-hidden="true"></i> ISO 9001 Quality (placeholder)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ════════════════════════════════════════════
+     PAGE: FAQs
+════════════════════════════════════════════ -->
+<div id="page-faqs" class="page">
+  <div class="inner-hero">
+    <div class="inner-hero-grid">
+      <div>
+        <div class="breadcrumb"><a onclick="showPage('home')">Home</a> › FAQs</div>
+        <h1>Frequently Asked<br><em>Questions</em></h1>
+        <p>Answers to the most common questions about temporary boiler hire from Apex Boiler Hire. Can't find what you need? Call us on 01236 738583.</p>
+      </div>
+      <div class="inner-hero-cta">
+        <a class="btn-primary" onclick="showPage('contact')">Request a Quote</a>
+        <a class="btn-outline" href="tel:01236738583"><i class="fas fa-phone icon" aria-hidden="true"></i>01236 738583</a>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="faq-list">
+        <div class="faq-item open">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>What size boiler do I need for my building?</span>
+            <div class="faq-icon">−</div>
+          </button>
+          <div class="faq-answer">
+            <p>The correct boiler output depends on a number of factors, including the size and type of your building, its insulation standard, the number of radiators or fan coils connected, the domestic hot water demand, and the heating system design. Our engineers will ask for this information when you make an enquiry and can advise on the appropriate output. Where possible, we would recommend sharing the output rating of your existing boiler as a useful starting reference.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Do you offer emergency boiler hire?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. We operate a 24/7 emergency response line at 01236 738583. Emergency hire is available for commercial and industrial sites across the UK, including schools, hospitals, care homes, offices, and industrial facilities. Please call us immediately if you have a live heating failure — do not submit an online form for urgent emergencies, as a phone call will receive the fastest response.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Can you supply temporary hot water as well as heating?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. We can supply temporary domestic hot water (DHW) generation as part of a hire package. This is achieved using temporary calorifiers or direct hot water units connected to the temporary boiler output. If hot water supply is part of your requirement, please advise us when you enquire so that we can ensure the correct equipment is specified from the outset.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Do you cover all UK regions?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Apex Boiler Hire operates nationwide, covering England, Scotland, and Wales. We deliver to both urban and rural locations. Response times for emergency hire will vary depending on your location and proximity to our logistics network — please call us to discuss your specific location and timescale.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Can you support schools and hospitals?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, and these are among our most common client types. We understand the particular urgency involved when heating fails in a school or healthcare facility. We are experienced in working within educational and healthcare environments and are familiar with the associated site access, safety, and approval requirements. Schools and healthcare clients receive priority treatment for emergency response.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Do you provide installation and commissioning?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. All hire packages include delivery, installation, and full commissioning by our Gas Safe registered engineers. We connect the temporary boiler to your existing heating system pipework, install the flue, set up controls, and commission the unit before handover. We do not simply drop equipment and leave — we ensure it is working correctly on site before we depart.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>How quickly can you deliver?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            <p>Delivery timescale depends on your location, the complexity of the installation, site access constraints, and current availability of equipment and engineers. In many cases, we can achieve same-day or next-morning delivery for emergency hire requirements within our main logistics areas. For planned hire, we work to an agreed programme. Please call us to discuss your specific timescale requirements and we'll advise on realistic delivery expectations for your location.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Can you supply short-term and long-term hire?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. We accommodate hire periods ranging from a matter of days in an emergency scenario through to many months for capital works programmes. Hire periods are agreed at the outset and can typically be extended with reasonable notice. Please discuss your expected duration when you enquire so that we can price accordingly and plan the logistics of equipment return at the end of the hire.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>What fuel types do your temporary boilers use?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            <p>The majority of our hire fleet is designed for natural gas operation (mains connected). We can also supply LPG-compatible equipment for sites without mains gas. Oil-fired units may be available for specific applications — please enquire. When you contact us, advise us of the fuel type available at your site and we'll confirm the appropriate equipment.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Will the temporary boiler integrate with my existing system?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            <p>In most cases, yes. Our engineers connect the temporary boiler to your existing primary pipework using standard commercial connection methods. We will need to know the flow and return connection sizes and the system pressure and temperature design parameters. Where temporary pipework is required to bridge between the hire unit and your building's pipework, we can supply this as part of the hire package.</p>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:3rem">
+        <p style="color:var(--text-light);margin-bottom:1.25rem">Didn't find the answer you were looking for? Contact our team directly.</p>
+        <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+          <a class="btn-primary" onclick="showPage('contact')">Submit an Enquiry</a>
+          <a class="btn-outline" style="color:var(--navy);border-color:var(--border)" href="tel:01236738583"><i class="fas fa-phone icon" aria-hidden="true"></i>01236 738583</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ════════════════════════════════════════════
+     PAGE: CONTACT
+════════════════════════════════════════════ -->
+<div id="page-contact" class="page">
+  <div class="inner-hero">
+    <div class="inner-hero-grid">
+      <div>
+        <div class="breadcrumb"><a onclick="showPage('home')">Home</a> › Contact</div>
+        <h1>Request a Quote<br><em>or Get in Touch</em></h1>
+        <p>Complete the enquiry form, call us directly, or email — our team will respond promptly with technical advice and a competitive quote.</p>
+      </div>
+      <div class="inner-hero-cta">
+        <a class="emergency-phone" href="tel:01236738583" style="font-size:1.5rem;color:var(--white)"><i class="fas fa-phone icon" aria-hidden="true"></i>01236 738583</a>
+        <p style="color:rgba(255,255,255,0.55);font-size:0.82rem">Available 24/7 for emergencies</p>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <h2 class="section-title" style="margin-bottom:0.5rem">Enquiry Form</h2>
+          <p style="color:var(--text-light);margin-bottom:1.75rem">Complete the form below and a member of our team will be in touch. For emergency hire, please <strong>call us directly on 01236 738583</strong> rather than submitting a form.</p>
+          <div class="three-col">
+            <div class="form-group"><label>Your Name *</label><input type="text" placeholder="Full name"></div>
+            <div class="form-group"><label>Company *</label><input type="text" placeholder="Organisation name"></div>
+            <div class="form-group"><label>Job Title</label><input type="text" placeholder="Your role"></div>
+          </div>
+          <div class="two-col">
+            <div class="form-group"><label>Phone *</label><input type="tel" placeholder="Contact number"></div>
+            <div class="form-group"><label>Email *</label><input type="email" placeholder="Email address"></div>
+          </div>
+          <div class="two-col">
+            <div class="form-group"><label>Site Location *</label><input type="text" placeholder="Town and postcode"></div>
+            <div class="form-group"><label>Building Type</label><input type="text" placeholder="e.g. School, hospital, office"></div>
+          </div>
+          <div class="two-col">
+            <div class="form-group">
+              <label>Requirement Type *</label>
+              <select>
+                <option value="">Select…</option>
+                <option>Emergency hire — immediate response</option>
+                <option>Planned hire — boiler replacement</option>
+                <option>Planned hire — refurbishment / shutdown</option>
+                <option>Planned hire — construction project</option>
+                <option>Standby / contingency unit</option>
+                <option>Unsure — need guidance</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Hire Duration</label>
+              <select>
+                <option value="">Select…</option>
+                <option>Emergency (days)</option>
+                <option>1–4 weeks</option>
+                <option>1–3 months</option>
+                <option>3–6 months</option>
+                <option>6 months+</option>
+                <option>Unsure</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group"><label>Existing Boiler Output (if known)</label><input type="text" placeholder="e.g. 200kW natural gas — or leave blank if unsure"></div>
+          <div class="form-group"><label>Additional Details / Message *</label><textarea rows="5" placeholder="Please describe your requirement — site type, nature of the problem, urgency, access constraints, or any other relevant information."></textarea></div>
+          <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem">
+            <input type="checkbox" id="consent" style="width:auto">
+            <label for="consent" style="font-size:0.85rem;color:var(--text-light);text-transform:none;letter-spacing:0">I consent to Apex Boiler Hire storing my details to respond to this enquiry.</label>
+          </div>
+          <button class="btn-submit" onclick="formSubmit()" style="max-width:300px;padding:1rem 2rem;font-size:1.05rem">Submit Enquiry →</button>
+        </div>
+        <div>
+          <div class="contact-info-card">
+            <h3>Contact Details</h3>
+            <div class="contact-detail">
+              <i class="fas fa-phone icon" aria-hidden="true"></i>
+              <div><strong>Phone</strong><a href="tel:01236738583">01236 738583</a></div>
+            </div>
+            <div class="contact-detail">
+              <i class="fas fa-envelope icon" aria-hidden="true"></i>
+              <div><strong>Email</strong><a href="mailto:info@atechheat.co.uk">info@atechheat.co.uk</a></div>
+            </div>
+            <div class="contact-detail">
+              <i class="fas fa-location-dot icon" aria-hidden="true"></i>
+              <div><strong>Head Office</strong><span>26 Deerdykes View, Westfield Industrial Estate<br>Cumbernauld, North Lanarkshire, G68 9HN<br>United Kingdom</span></div>
+            </div>
+            <div class="contact-detail">
+              <i class="fas fa-calendar icon" aria-hidden="true"></i>
+              <div><strong>Office Hours</strong><span>Mon–Fri: 7:30am – 5:30pm</span></div>
+            </div>
+            <div class="emergency-box">
+              <strong><i class="fas fa-triangle-exclamation icon" aria-hidden="true"></i>Emergency Line — 24/7</strong>
+              <p>For urgent heating failures outside office hours, call 01236 738583. Our emergency response team is available around the clock.</p>
+            </div>
+          </div>
+
+          <div class="coverage-map" style="margin-top:1.5rem">
+            <span class="section-label">Our Location</span>
+            <div class="map-wrapper">
+              <iframe src="https://www.google.com/maps?q=26%20Deerdykes%20View%2C%20Westfield%20Industrial%20Estate%2C%20Cumbernauld%2C%20North%20Lanarkshire%2C%20G68%209HN%2C%20United%20Kingdom&output=embed" loading="lazy" title="Apex Boiler Hire head office location"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img class="footer-logo" src="Assets/Images/Apex Boilers - Logo.png" alt="Apex Boiler Hire Logo">
+      <p>Temporary boiler hire solutions for commercial, industrial, and public sector clients across the United Kingdom. Emergency and planned hire available 24/7.</p>
+      <div class="footer-contact-item">
+        <i class="fas fa-phone icon" aria-hidden="true"></i>
+        <a href="tel:01236738583">01236 738583</a>
+      </div>
+      <div class="footer-contact-item">
+        <i class="fas fa-envelope icon" aria-hidden="true"></i>
+        <a href="mailto:info@atechheat.co.uk">info@atechheat.co.uk</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul class="footer-nav-list">
+        <li><a onclick="showPage('boiler-hire')">Boiler Hire</a></li>
+        <li><a onclick="showPage('emergency')">Emergency Boiler Hire</a></li>
+        <li><a onclick="showPage('planned')">Planned Temp. Heating</a></li>
+        <li><a onclick="showPage('containerised-boilers')">Containerised Boilers</a></li>
+        <li><a onclick="showPage('boiler-hire')">Packaged Boiler Hire</a></li>
+        <li><a onclick="showPage('boiler-hire')">Hot Water Solutions</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Industries</h4>
+      <ul class="footer-nav-list">
+        <li><a onclick="showPage('industries')">Education</a></li>
+        <li><a onclick="showPage('industries')">Healthcare / NHS</a></li>
+        <li><a onclick="showPage('industries')">Care Homes</a></li>
+        <li><a onclick="showPage('industries')">Commercial Property</a></li>
+        <li><a onclick="showPage('industries')">Industrial Sites</a></li>
+        <li><a onclick="showPage('industries')">Local Authority</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul class="footer-nav-list">
+        <li><a onclick="showPage('about')">About Us</a></li>
+        <li><a onclick="showPage('faqs')">FAQs</a></li>
+        <li><a onclick="showPage('contact')">Contact Us</a></li>
+        <li><a onclick="showPage('contact')">Request a Quote</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Apex Boiler Hire Ltd. All rights reserved. Registered in England & Wales. [Company No. placeholder]. Gas Safe registered.</p>
+    <div class="footer-social">
+      <a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+      <a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+    </div>
+    <div class="footer-certifications">
+      <img class="footer-cert-logo" src="Assets/Images/Certification Logos/Gas_Safe_Register.svg" alt="Gas Safe Register">
+      <img class="footer-cert-logo" src="Assets/Images/Certification Logos/BESA - Building Engineering Services Association.png" alt="BESA Building Engineering Services Association">
+      <img class="footer-cert-logo" src="Assets/Images/Certification Logos/CHAS - The Contractors Health and Safety Assessment.png" alt="CHAS The Contractors Health and Safety Assessment">
+      <img class="footer-cert-logo" src="Assets/Images/Certification Logos/CQMS - Crown Quality Management Services.jpg" alt="CQMS Crown Quality Management Services">
+      <img class="footer-cert-logo" src="Assets/Images/Certification Logos/Constructionline-Silver-Member-Accreditation.webp" alt="Constructionline Silver Member Accreditation">
+      <img class="footer-cert-logo" src="Assets/Images/Certification Logos/Mitsubishi_Electric.png" alt="Mitsubishi Electric">
+    </div>
+  </div>
+</footer>
+
+<!-- SUCCESS MODAL -->
+<div id="successModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:9999;align-items:center;justify-content:center">
+  <div style="background:var(--white);border-radius:10px;padding:2.5rem;max-width:440px;width:90%;text-align:center;box-shadow:var(--shadow-lg)">
+    <div style="width:64px;height:64px;background:rgba(21,101,192,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;color:var(--blue)">
+      <i class="fas fa-circle-check icon-lg" aria-hidden="true"></i>
+    </div>
+    <h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.4rem;color:var(--navy);margin-bottom:0.5rem;text-transform:uppercase">Enquiry Received</h3>
+    <p style="color:var(--text-light);font-size:0.95rem;line-height:1.7;margin-bottom:1.5rem">Thank you for contacting Apex Boiler Hire. A member of our team will be in touch shortly. For urgent requirements, please call <strong>01236 738583</strong>.</p>
+    <button onclick="document.getElementById('successModal').style.display='none'" class="btn-primary" style="border:none;cursor:pointer">Close</button>
+  </div>
+</div>
+
+<script>
+  function showPage(id) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    const page = document.getElementById('page-' + id);
+    if (page) {
+      page.classList.add('active');
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+    }
+    document.querySelectorAll('.header-nav a').forEach(a => a.classList.remove('active'));
+  }
+
+  function toggleMobile() {
+    const nav = document.getElementById('mobileNav');
+    if (!nav) return;
+    nav.classList.toggle('open');
+  }
+
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.faq-icon').textContent = '+';
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      item.querySelector('.faq-icon').textContent = '−';
+    }
+  }
+
+  function formSubmit() {
+    const modal = document.getElementById('successModal');
+    modal.style.display = 'flex';
+  }
+
+  function initAnimations() {
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    document.querySelectorAll('.btn-primary, .btn-outline, .btn-white, .btn-header-quote').forEach(el => {
+      el.classList.add('hover-lift');
+    });
+    document.querySelectorAll('a .icon, button .icon, .service-icon .icon, .why-icon .icon, .industry-chip .icon').forEach(icon => {
+      const parent = icon.closest('a, button, .service-card, .why-card, .industry-chip');
+      if (parent) parent.classList.add('icon-hover');
+    });
+
+    const revealItems = document.querySelectorAll('.service-card, .why-card, .industry-chip, .step, .stat-card, .testimonial-card, .sidebar-card, .industry-section, .value-card, .faq-item, .contact-info-card, .coverage-map, .map-wrapper, .product-image, .spec-table, .intro-visuals');
+    if (reduceMotion || !('IntersectionObserver' in window)) {
+      revealItems.forEach(el => el.classList.add('is-visible'));
+      return;
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    revealItems.forEach(el => {
+      el.classList.add('fade-up');
+      observer.observe(el);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', initAnimations);
+
+  // Close mobile nav on outside click
+  document.addEventListener('click', function(e) {
+    const nav = document.getElementById('mobileNav');
+    const header = document.getElementById('site-header');
+    if (nav.classList.contains('open') && !nav.contains(e.target) && !header.contains(e.target)) {
+      nav.classList.remove('open');
+    }
+  });
+</script>
+</body>
+</html>
